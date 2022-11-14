@@ -1,0 +1,133 @@
+
+.App{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    width: 100%;
+    height: auto;
+}
+
+.users-list{
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 700px;
+}
+
+.card-users{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 380px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    height: auto;
+    margin-bottom: 15px;
+    box-shadow: 3px 3px 3px 3px gray;
+    transition: all 0.7s ease;
+    background-color: white;
+}
+
+.card-users:hover{
+    transform: translateY(-0.1em);
+}
+
+.card-users-items{
+    margin-left: 10px;
+}
+
+.card-button{
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.card-button>button{
+    border-radius: 5px;
+    border: none;
+    transition: all 0.7s ease;
+    
+}
+
+.card-button>button:hover{
+    transform: translateY(-0.2em);
+    cursor: pointer;
+}
+
+.bxs-pencil{
+    color: green;
+}
+
+.bxs-trash-alt{
+    color: red;
+}
+
+.users-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 400px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    height: 150px;
+    box-shadow: 3px 3px 3px 3px gray;
+    transition: all 0.7s ease;
+}
+
+input{
+    width: 360px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(128, 128, 128, 0.164);
+    margin-left: 5px;
+}
+
+label{
+    margin-left: 5px;
+}
+
+.input-name{
+    width: 170px;
+}
+
+
+.input-button>button{
+    width: 150px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    margin-left: 35px;
+    transition: all 0.7s ease;
+}
+
+.input-button>button:hover{
+    transform: translateY(-0.2em);
+}
+
+@media screen and (max-width: 420px){
+    .App{
+        flex-direction: column-reverse;
+    }
+    .card-users{
+        width: 280px;
+    }
+    .users-form{
+        width: 350px;
+        height: 200px;
+    }
+    .users-list{
+        width: 350px;
+    }
+    .input-name{
+        width: 140px;
+    }
+    input{
+        width: 300px;
+    }
+    .input-button>button {
+        margin-left: 0;
+    }
+
+}
